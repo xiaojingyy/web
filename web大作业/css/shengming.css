@@ -1,0 +1,451 @@
+       * {
+            padding: 0px;
+            margin: 0px;
+            user-select: none;
+            -webkit-user-drag: none;
+
+
+      }
+
+      a {
+            display: block;
+            text-decoration: none;
+            color: white;
+      }
+      li{
+            list-style: none;
+      }
+
+      .nav {
+            /* width: 1204px; */
+            width: 100%;
+            height: 70px;
+            /* background-color:#a90c0c; */
+            background-image: url(../web大作业图片素材/ggred.jpg);
+            /* position: absolute; */
+            position: active;
+            text-align: center;
+      }
+      .nav-son{
+            display: inline-block;
+            width: 1204px;
+      }
+
+      .nav .title {
+            display: inline-block;
+            width: 200px;
+            float: left;
+            line-height: 70px;
+            text-align: center;
+            font-family: KaiTi;
+            font-weight: 900;
+      }
+
+      .nav ul li {
+            display: inline-block;
+            width: 100px;
+            line-height: 70px;
+            float: left;
+            list-style: none;
+            text-align: center;
+            border-radius: 5px;
+            position: relative;
+      }
+
+
+      .nav ul li a {
+            display: inline-block;
+            width: 70px;
+      }
+
+
+
+      .nav ul li ul li {
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+            /* background-color: #a90c0c; */
+            background-image: url(../web大作业图片素材/ggred.jpg);
+
+            border-radius: 5px;
+            line-height: 50px;
+
+
+
+      }
+
+      .nav ul li ul {
+            display: inline-block;
+            width: 100px;
+            visibility: hidden;
+            position: absolute;
+            top: 70px;
+            right: 10px;
+
+
+      }
+
+      .nav ul li ul:hover li {
+            visibility: visible;
+            float: left;
+            /* z-index: 10; */
+      }
+
+      .nav .hang li:hover ul,
+      .nav .hang li a:hover ul,
+      .nav .hang li a:hover {
+
+            color: #cc6633;
+            visibility: visible;
+      }
+
+      /* search搜索模块 */
+      .search {
+            float: left;
+            width: 225px;
+            height: 62px;
+            /* background-color: #a90c0c; */
+            background-image: url(../web大作业图片素材/ggred.jpg);
+            position: relative;
+            margin-left: 0px;
+            overflow: hidden;
+            
+      }
+
+      .search input {
+            width: 170px;
+            height: 40px;
+            /* border: 1px #a90c0c; */
+            background-image: url(../web大作业图片素材/ggred.jpg);
+
+            border-right: 0px;
+            color: #bfbfbf;
+            font-size: 14px;
+            padding-left: 15px;
+            margin-top: 13px;
+            border-radius: 15px;
+            float: left;
+      }
+
+      .search button {
+            margin-top: 17px;
+            margin-left: 2px;
+            width: 35px;
+            height: 35px;
+            /* float: left; */
+            border: 0px;          
+            background: url(../web大作业图片素材/ggred.jpg);
+            /* background: url(../web大作业图片素材/search1.png) no-repeat #a90c0c; */
+            /* overflow: hidden; */
+            position: relative;
+      }
+      .search button img{
+            width: 35px;
+            /* height: 35px; */
+            float: left;
+            
+
+      }
+
+      .search button:hover {
+            position: absolute;
+            top:-50px;
+            right:0 ;
+           
+            
+      }
+
+      .user button {
+
+            height: 32px;
+            width: 95px;
+
+      }
+
+      .user {
+            margin-top: 17px;
+            margin-left: 20px;
+            float: left;
+            overflow: hidden;
+            height: 34px;
+            width:50px;
+            position: relative;
+
+      }
+
+      .user button img {
+            position: absolute;
+            /* top: -41px; */
+            float: top;
+      }
+
+      #user {
+            display: block;
+            height: 30px;
+            float: left;
+            /* width: 95px; */
+            /* margin-left: 30px; */
+
+
+      }
+
+      #user img:hover {
+            position: absolute;
+            top: -41px;
+
+      }
+      /* 链接区域 */
+
+      .body{
+          /* width: 1204px; */
+            width: 100%;
+            height: 600px;
+            background-color: white;
+            text-align: center;
+      }
+
+      .body-nav{
+            width: 1204px;
+            height: 50px;
+            background-color:white;
+            padding: 0px;
+            display: block;
+      }
+      .body-nav a,
+      .body-nav span{
+            width: 40px;
+            display: inline-block;
+            float: left;
+            padding-left:10px ;
+            line-height: 50px;
+            color: #707070;
+            font-family: 微软雅黑,'Heiti SC',黑体,Arial;
+      }
+      .body-nav a:hover{
+            font-size: larger;
+      }
+
+      /* 声明区域 */
+      .sm{
+            display: inline-block;
+      }
+      /* 标题部分 */
+      .sm .h1{
+            display: inline-block;
+            width: 100%;
+            font-size: 14px;
+            text-align: center;
+            color: #474747;
+            line-height: 1.2;
+            margin-top: 30px;
+      }
+      /* 日期 */
+      .time{
+            display: inline-block;
+            width: 100%;
+            font-size: 14px;
+            text-align: center;
+            color: #474747;
+            line-height: 1.2;
+            margin-top: 30px;
+            text-align: center;
+      }
+      /* 正文 */
+      .sm .p{
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+      }
+      .sm .p p {
+            display: block;
+            text-indent: 2em;
+
+            line-height: 50px;
+
+      }
+      /* 署名 */
+      .sm .name{
+            text-align: right;
+      }
+      
+
+      /* 分享到微信微博部分 */
+      .share{
+            width: 100%;
+            height: 70px;
+            margin-top: 50px;
+           
+      }
+      .share-son{
+            display: inline-block;
+            float: right;
+            width: 210px;
+            height: 100%;
+           
+            margin-right: 80px;
+            line-height: 70px;
+      }
+      .share-son span{
+            display: block;
+            float: left;
+      }
+      .share-son a{
+            display: block;
+            float: left;
+            width: 50px;
+            height:50px;
+            margin:0 5px ;
+            border-radius: 100%;
+            border:1px solid #ddd ;
+
+      }
+      .share-son a:hover{
+            border:1px solid black ;
+      }
+      .share-son .wx{
+            background:url(../web大作业图片素材/声明部分的微信图标.png) center center no-repeat;
+      }
+      .share-son .wb{
+            background:url(../web大作业图片素材/声明部分的微博图标.png) center center no-repeat;
+      }
+
+      /* 下方区域 */
+      .hall{
+            
+            width: 100%;
+            height: 200px;
+            margin-top: 0px;
+            margin-left: 40px;
+            margin-right: 40px;
+
+            text-align: center;
+      }
+      .hall-son{
+            display: inline-block;
+            width: 1125px;
+      }
+      .hall-one{
+            width: 225px;
+            height: 200px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/图书馆背景图.jpg);
+      }
+      .hall-two{
+            width: 225px;
+            height: 200px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/视听馆背景图.jpg);
+      }
+      .hall-three{
+            width: 225px;
+            height: 200px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/数字文物库背景图.jpg);
+      }
+      .hall-four{
+            width: 225px;
+            height: 200px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/全景故宫背景图.jpg);
+      }
+      .hall-five{
+            width:225px;
+            height: 200px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/VR故宫背景图.jpg);
+      }
+      .hall-one:hover,
+      .hall-two:hover,
+      .hall-three:hover,
+      .hall-four:hover,
+      .hall-five:hover{background-image: url(../web大作业图片素材/ggblue.png);}
+      
+      .hall .logo,
+      .hall .logo img{
+            display: block;
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+            margin-top:40px;
+            margin-left:30px ;
+      }
+      .hall p{
+            display: block;
+            font-size: 16px;
+            width:225px;
+            height: 1em;
+            padding-left: 5em;  
+            font-weight:bolder;
+            color: white;
+      }
+      /* 底部区域 */
+      .bottom{
+            /* width: 1204px; */
+            width: 100%;
+            height: 300px;
+            background-color: #272727;
+            margin-top: 30px;
+            text-align: center;
+      }
+      .bottom .a{
+            height: 100px;
+            background-color: #272727;
+            display: inline-block;
+      } /* 让图标那一行居中 */
+      
+      .a .bottom-div{
+            display: block;
+            width: 100px;
+            height: 120px;
+            margin:2px 10px;
+            float: left;
+            
+      }
+      .bottom-nav,.bottom-nav img{
+            display: block;
+            width: 100px;
+            height: 100px;
+            /* margin:0 10px; */
+            background-color: #474747;
+            float: left;
+            border-radius: 50px;
+      }
+      .bottom-nav img:hover{
+            transform: scale(1.02);
+      }
+      .a-div span{
+            display: block;
+            color: #b4b3b8;
+            font-size: 16px;
+            text-align: center;
+      }
+      .nav-foot{
+           display: inline-block;
+           width: 100%;
+           height: 30px;
+           float: left;
+           text-align: center;
+           margin-top: 30px;
+      }
+      .nav-foot .a-nav{
+            /* margin-left: 250px; */
+           display: inline-block;
+
+      }
+      .nav-foot a{
+            display: inline-block;
+            width: 80px;
+            margin:5px;
+            font-weight: bold;
+            /* float: left; */
+      }
+      .copyright{
+            margin-top: 100px;
+            text-align: center;
+            font-size: 30px;
+      }
