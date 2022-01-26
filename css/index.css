@@ -1,0 +1,1328 @@
+       * {
+            padding: 0px;
+            margin: 0px;
+            user-select: none;
+            -webkit-user-drag: none;
+
+
+      }
+
+      a {
+            display: block;
+            text-decoration: none;
+            color: white;
+      }
+      li{
+            list-style: none;
+      }
+
+      .nav {
+            width: 1204px;
+            height: 70px;
+            /* background-color:#a90c0c; */
+            background-image: url(../web大作业图片素材/ggred.jpg);
+            /* position: absolute; */
+            position: active;
+      }
+
+      .nav .title {
+            display: inline-block;
+            width: 200px;
+            float: left;
+            line-height: 70px;
+            text-align: center;
+            font-family: KaiTi;
+            font-weight: 900;
+      }
+
+      .nav ul li {
+            display: inline-block;
+            width: 100px;
+            line-height: 70px;
+            float: left;
+            list-style: none;
+            text-align: center;
+            border-radius: 5px;
+            position: relative;
+      }
+
+
+      .nav ul li a {
+            display: inline-block;
+            width: 70px;
+      }
+
+
+
+      .nav ul li ul li {
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+            /* background-color: #a90c0c; */
+            background-image: url(../web大作业图片素材/ggred.jpg);
+
+            border-radius: 5px;
+            line-height: 50px;
+
+
+
+      }
+
+      .nav ul li ul {
+            display: inline-block;
+            width: 100px;
+            visibility: hidden;
+            position: absolute;
+            top: 70px;
+            right: 10px;
+
+
+      }
+
+      .nav ul li ul:hover li {
+            visibility: visible;
+            float: left;
+            /* z-index: 10; */
+      }
+
+      .nav .hang li:hover ul,
+      .nav .hang li a:hover ul,
+      .nav .hang li a:hover {
+
+            color: #cc6633;
+            visibility: visible;
+      }
+
+      /* search搜索模块 */
+      .search {
+            float: left;
+            width: 225px;
+            height: 62px;
+            /* background-color: #a90c0c; */
+            background-image: url(../web大作业图片素材/ggred.jpg);
+            position: relative;
+            margin-left: 0px;
+            overflow: hidden;
+            
+      }
+
+      .search input {
+            width: 170px;
+            height: 40px;
+            /* border: 1px #a90c0c; */
+            background-image: url(../web大作业图片素材/ggred.jpg);
+
+            border-right: 0px;
+            color: #bfbfbf;
+            font-size: 14px;
+            padding-left: 15px;
+            margin-top: 13px;
+            border-radius: 15px;
+            float: left;
+      }
+
+      .search button {
+            margin-top: 17px;
+            margin-left: 2px;
+            width: 35px;
+            height: 35px;
+            /* float: left; */
+            border: 0px;          
+            background: url(../web大作业图片素材/ggred.jpg);
+            /* background: url(../web大作业图片素材/search1.png) no-repeat #a90c0c; */
+            /* overflow: hidden; */
+            position: relative;
+      }
+      .search button img{
+            width: 35px;
+            /* height: 35px; */
+            float: left;
+            
+
+      }
+
+      .search button:hover {
+            position: absolute;
+            top:-50px;
+           
+            
+      }
+
+      .user button {
+
+            height: 32px;
+            width: 95px;
+
+      }
+
+      .user {
+            margin-top: 17px;
+            margin-left: 20px;
+            float: left;
+            overflow: hidden;
+            height: 34px;
+            width:50px;
+            position: relative;
+
+      }
+
+      .user button img {
+            position: absolute;
+            /* top: -41px; */
+            float: top;
+      }
+
+      #user {
+            display: block;
+            height: 30px;
+            float: left;
+            /* width: 95px; */
+            /* margin-left: 30px; */
+
+
+      }
+
+      #user img:hover {
+            position: absolute;
+            top: -41px;
+
+      }
+      /* 焦点图的盒子大小 */
+      .promo{
+            width: 1204px;
+            height: 563px;
+      /* 暂时将其他焦点图藏起来 */
+            overflow: hidden;
+            position:relative;
+            /* top:-70px; */
+            z-index: -1;
+      }
+      /* 焦点图要和盒子一样大 */
+      .promo li img{
+            width: 1204px;
+            height: 563px;
+            float: left;
+            /* margin-top: 70px; */
+
+      }
+      .promo-ul{
+            /* 使得轮播图在一行上，但是由于盒子大小只有一个图片大小，所以只显示一张图 */
+            width: 6020px;
+            /* 决定轮播图是否正常运行的因素 */
+            position:absolute;
+      }
+      .promo ul li{
+            /* 轮播图上浮 */
+            float: left;
+      }
+      .left,.right{
+            /* 左右换页按钮 */
+            display: block;
+            width: 62px;
+            height: 632px;
+            float: left;
+            display: none;/*js，先隐藏*/
+      
+      }
+      /* 左右按钮 */
+      .left img{
+            width:62px;
+            height: 62px;
+            position: absolute;
+            left: 0px;
+            top: 270px;
+      
+      }
+      .left img:hover{
+            width:80px;
+            height: 80px;
+            position: absolute;
+            left: 0px;
+            top: 255px;
+      }
+      .right img{
+            width:62px;
+            height: 62px;
+            position: absolute;
+            right: 0px;
+            top: 270px;
+      }
+      .right img:hover{
+            width:80px;
+            height: 80px;
+            position: absolute;
+            right: 0px;
+            top: 255px;
+      }
+      /* 下方换页圆点 */
+      .promo-nav{
+            position: absolute;
+            bottom:30px;
+            left: 50%;
+            margin-left: -60px;
+            width: 100px;
+            height: 20px;
+            background-color: rgba(255, 255,255,.3);
+            border-radius: 10px;
+      }
+      .promo-nav li{
+            width: 8px;
+            height: 8px;
+            background-color: white;
+            float: left;
+            border-radius: 50%;
+            padding-left: 2px;
+            margin: 5px;
+      }
+      .nav-li:hover{
+            background-color: tomato;
+
+      }
+      .nr{
+            width: 1124px;
+            height: 830px;
+            margin-top: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+      
+      }
+      .important{
+            margin-top: 0px;
+      }
+      .nr-news{
+
+            width: 630px;
+            height: 460px;
+            display: block;
+            margin-top: 0px;
+            float: left;
+            background-image: url(../web大作业图片素材/ggred.jpg);
+            }
+      .nr-news h1{
+            background: url(../web大作业图片素材/dot.png) no-repeat center center;
+            line-height: 30px;
+            display: inline-block;
+            font-size: 14px;
+            margin-top:15px;
+            margin-left: 20px;
+      }
+
+      .nr-news h1 span {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            vertical-align: middle;
+            margin:5px;
+            font-size: 24px;
+            font-family: 微软雅黑,'Heiti SC',黑体,Arial;
+            color: white;
+      }
+      .nr-news h1 a{
+            width: 190px;
+            height: 35px;
+      }
+      .nr-news h1 img{
+            width: 20px;
+            height: 30px;
+      }
+      .nr-news .more{
+            font-family: fzfysjt;
+            color: #fff;
+            position: relative;
+            line-height: 1;
+            width: 1.5em;
+            padding: 15px 25px;
+            float: right;
+            display: block;
+      
+      }
+      .nr-news .more i{
+            font-style: normal;
+            font-weight: normal;
+            background: url(../web大作业图片素材/双鱼.png) no-repeat;
+            position: absolute;
+            left: 8px;
+            top: 7px;
+            width: 50px;
+            height: 50px;
+            display: block;
+      
+      }
+      .more i:hover{
+      -webkit-transition: all 0.5s linear; 
+      transition: all 0.5s linear; 
+      -webkit-transform: rotate(-180deg); 
+      transform: rotate(-180deg); 
+      }
+      .nr-news .news{
+            position: relative; 
+            padding: 10px 0; 
+            padding-left: 25px; 
+            display: block; 
+            font-size: 20px; 
+            white-space: nowrap; 
+            overflow: hidden; 
+            /* 行内溢出显示省略号 */
+            text-overflow: ellipsis; 
+            margin-top: 10px;
+            }
+      .nr-news .nr-news-top{
+            color: #fff; 
+            border-bottom: 1px solid rgba(255,255,255,0.15); 
+            margin-top: 20px; 
+            padding-bottom: 20px; 
+      }
+      .nr-news .news em{
+            width: 20px;
+            height: 15px;
+            display: inline-block;
+            float: left;
+      
+      }
+      .news em img{
+            width: 20px;
+            height: 15px;
+      }
+      .nr-news .nr-news-bottom{
+            width: 650px;
+            line-height: 22px;
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #fff;
+            padding-left: 20px;
+            margin-right: 0;
+            padding-right: 25px;
+            position: relative;
+            display: inline-block;
+            padding-top: 0;
+            box-sizing: border-box;
+            float: left;
+      }
+      .nr-news .nr-news-bottom li{
+            display: block;
+            width: 600px;
+      }
+      .nr-news-bottom a{
+            width: 450px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 14px;
+            /* 溢出文字用省略号 */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #fff;
+            padding-left: 20px;
+            margin-right: 0;
+            padding-right: 25px;
+            max-width: 82%;
+            position: relative;
+            display: inline-block;
+            padding-top: 0;
+            box-sizing: border-box;
+            float: left;
+      }
+      .nr-news-bottom a:hover{
+            color: coral;
+            font-size: larger;
+      }
+      .nr-news-bottom p{
+            display:inline-block;
+            width: 100px; 
+            height: 35px;
+            line-height: 30px;
+            float: right; 
+            font-family: Arial; 
+            font-size:17px; 
+           padding-top: -5px;
+            
+         
+      }
+      .nr-news-bottom span{
+            font-size: 22px;
+            line-height: 1;
+      }
+      .nr-news-bottom em{
+            margin-left: 3px;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            right: 0;
+            background-color: #b73736;
+            color: #fff;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            font-size: 14px;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 3px;
+      }
+      .nr-service{
+
+            width: 470px;
+            height: 530px;
+            display: block;
+            float: right;
+            margin-left: 20px;
+
+      }
+      .nr-service .time{
+            width: 470px;
+            height: 265px;
+            background-image: url(../web大作业图片素材/ggblue.png);
+            float: left;
+            display: block;
+      }
+      /* 大标题 */
+      .nr-service .time .h1{ 
+            color:white; 
+            text-align: center; 
+            font-size: 20px; 
+            font-family: Arial; 
+            display: block;
+            width: 470px;
+      }
+      .nr-service .time .h2{
+            margin-top: 10px;
+            font-size: 34px;
+            line-height: 1;
+            text-align: center;
+            display: block;
+      }
+      .nr-service .time .li{
+            float: left;
+            width: 85px;
+            display: block;
+      }
+     
+      .nr-service .time .p{
+            width: 320px;
+            margin-top: 10px;
+            text-align: center;
+            display: block;
+            margin:auto;
+      }
+      
+      /* 开放时间 */
+      .nr-service .li{
+            margin-left: 10px;
+      }
+      .nr-service .list .li h1{
+            font-size: 32px;  
+            font-family: Impact, Arial;
+            margin-bottom: 10px;         
+            color: inherit;
+            line-height: 1.2;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            color: white;
+      }
+      .nr-service .list .li p{
+            color: #8fb6d9;
+            white-space: nowrap;
+      }
+      .nr-service .list span{
+            background: url(../web大作业图片素材/span链接图.png) center center no-repeat;
+            width: 30px;
+            height: 30px;
+            margin-top: 23px;
+            display:block;
+            float: left;
+      }
+      /* 购票信息 */
+      .nr-service .tell{
+            width: 470px;
+            height: 265px;
+            background-image: url(../web大作业图片素材/ggpoolblue.png);
+            float: left;
+            background-color: red;
+      }
+      .nr-service .tell .tell-top{
+            height: 200px;
+            width: 460px;
+            margin:5px 5px;
+          
+      }
+      /* 购票网站放大 */
+      .nr-service .tell-top a:hover{
+            transform: scale(1.05);
+            color: tomato;
+      }
+      .nr-service .tell-top .web-tickets,
+      .nr-service .tell-top .wechat-tickets{
+            display: block;
+            float: left;
+            width:120px;
+            height: 100px;
+            margin-top: 30px;
+      }
+      .tell-top .img-tickets{
+           height:110px;
+      }
+      .tell-top .web-tickets img{
+            display: block;
+            margin-top: 30px;
+            /* margin-left: 15px; */
+            margin: auto;
+            width: 100px;
+            height: auto;
+      }
+      .tell-top .wechat-tickets img{
+            display: block;
+            margin-top: 20px;
+            /* margin-left: 15px; */
+            margin: auto;
+            width: 100px;
+            height: auto;
+      }
+      .tell-top .p-goupiao{
+            font-size: 14px;
+            white-space: nowrap;
+            display: block;
+            text-align: center;
+      }
+      .tell-top .ask-tellphone,
+      .tell-top .ask-tellphone img{
+            width: 205px;
+            height: auto;
+            margin-top: -3px;
+            display: block;
+            float: left;
+      }
+      .tell .nav-tickets{
+            border-top: 1px solid #1c2e3d;
+            border-bottom: 1px solid #487398;
+            margin-top: -10px;;
+            display: block; 
+            width: 470px;
+      }
+      .tell-bottom .item{
+            display: block;
+            float: left;
+            width: 110px;
+            height: 60px;
+            margin-left: 5px;
+            font-size: 16px;
+            line-height: 40px;
+      }
+      .tell-bottom a:hover{
+            transform: scale(1.05);
+            color: tomato;
+      }
+      .tell-bottom .item img{
+            width: 40px;
+            height:40px;
+            padding-top: 10px;
+            display: inline-block;
+      }
+
+      /* 花瓶 */
+      .nr-show{
+      background-color: rgb(34, 151, 161);
+      width: 630px;
+      height: 350px;
+      display: block;
+      float: left;
+      margin-top: 20px;
+      background-image: url(../web大作业图片素材/故宫多宝阁.png);
+      }
+      .nr-show img{
+            width: 300px;
+            height: 370px;
+      }
+      /* 公告 */
+      .nr-notice{
+      background-color: blue;
+      width: 470px;
+      height: 280px;
+      display: block;
+      float: right;
+      margin-top: 20px;
+      margin-left: 20px;
+      background-image: url(../web大作业图片素材/ggdragon.png);
+      }
+      .nr-notice h1{
+            background: url(../web大作业图片素材/dot.png) no-repeat center center;
+            line-height: 20px;
+            display: inline-block;
+            font-size: 20px;
+            margin-top:10px;
+            margin-left: 10px;
+      } 
+
+      .nr-notice h1 span {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            vertical-align: middle;
+            margin:5px;
+            margin-left: 5px;
+            font-size: 24px;
+            font-family: 微软雅黑,'Heiti SC',黑体,Arial;
+            color: white;
+      }
+      .nr-notice h1 a{
+            width: 210px;
+            height: 35px;
+            text-align: center;
+      }
+      .nr-notice h1 img{
+            width: 20px;
+            height: 30px;
+      }
+      .nr-notice .more{
+            font-family: fzfysjt;
+            color: #fff;
+            position: relative;
+            line-height: 1;
+            width: 1.5em;
+            padding: 15px 25px;
+            float: right;
+            display: block;
+      
+      }
+      .nr-notice .more i{
+            font-style: normal;
+            font-weight: normal;
+            background: url(../web大作业图片素材/双鱼.png) no-repeat;
+            position: absolute;
+            left: 8px;
+            top: 7px;
+            width: 50px;
+            height: 50px;
+            display: block;
+      
+      }
+      .more i:hover{
+      -webkit-transition: all 0.5s linear; 
+      transition: all 0.5s linear; 
+      -webkit-transform: rotate(-180deg); 
+      transform: rotate(-180deg); 
+      }
+      .nr-notice .news{
+            position: relative; 
+            padding: 5px 0; 
+            padding-left: 25px; 
+            display: block; 
+            font-size: 16px; 
+            white-space: nowrap; 
+            overflow: hidden; 
+            /* 行内溢出显示省略号 */
+            text-overflow: ellipsis;
+            margin-top: 10px;
+      }
+      .nr-notice .news:hover{
+            color: tomato;
+      }
+      .nr-notice .nr-news-top{
+            color: #fff; 
+            border-bottom: 1px solid rgba(255,255,255,0.15); 
+            margin-top: 20px; 
+            padding-bottom: 20px; 
+      }
+
+    
+      .nr-notice .nr-notice-bottom{
+            width: 450px;
+            line-height: 22px;
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #fff;
+            padding-left: 20px;
+            margin-right: 0;
+            padding-right: 25px;
+            position: relative;
+            display: inline-block;
+            padding-top: 0;
+            box-sizing: border-box;
+            float: left;
+      }
+      .nr-notice .nr-notice-bottom li{
+            display: block;
+            width: 600px;
+      }
+      .nr-notice-bottom a{
+            width: 400px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 14px;
+            /* 溢出文字用省略号 */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #fff;
+            padding-left: 20px;
+            margin-right: 0;
+            padding-right: 25px;
+            max-width: 82%;
+            position: relative;
+            /* display: inline-block; */
+            padding-top: 0;
+            box-sizing: border-box;
+            /* float: left; */
+      }
+      .nr-notice-bottom a:hover{
+            color: coral;
+            font-size: larger;
+      }
+      .nr-notice-bottom p{
+            display:inline-block;
+            width: 100px; 
+            height: 35px;
+            line-height: 30px;
+            float: right; 
+            font-family: Arial; 
+            font-size:17px; 
+           padding-top: -5px;
+            
+         
+      }
+
+
+      .photo-row{
+      
+      width: 1125px;
+      height: 340px;
+      margin-top: 20px;
+      margin-left: 40px;
+      margin-right: 40px;
+      }
+      .photo-row .photo-num{
+      width: 271px;
+      height: 340px;
+      display: block;
+      float: left;
+      background-image: url(../web大作业图片素材/故宫藏品图片.jpg);
+      padding-right: 24px;
+      }
+      .photo-row .photo-num .sum{
+            display: block;
+            width: 160px;
+            height: 50px;
+            margin-top: 200px;
+            margin-left: 70px;
+            /* background-color: rgb(109, 175, 33); */
+      }
+      .photo-row .photo-num .num-wenku{
+            display: block;
+            width: 160px;
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 70px;
+            /* background-color: rgb(71, 157, 255); */
+      }
+      /* 三个花瓶 */
+      .photo-row  .photo-three{
+            width: 810px;
+            height: 340px;
+            display: block;
+            float: right;
+      }
+      .photo-three a{
+            display: block;
+            width: 270px;
+            height: 340px;
+      }
+      
+      .photo-three-one{
+            width: 270px;
+            height: 340px;
+            display: block;
+            float: left;
+            position: relative;
+      }
+      
+      .photo-three-two{
+            width: 270px;
+            height: 340px;
+            display: block;
+            float: left;
+      }
+      .photo-three-three{
+            width: 270px;
+            height: 340px; 
+            display: block;
+            float: left;
+      }
+      .photo-three a:hover{
+            transform: scale(1.02);
+      }
+      
+      .artical{
+            width: 1124px;
+            height: 400px;
+            margin-top: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+      
+      }
+      .artical .active{
+            width: 370px;
+            height: 400px;
+            display: block;
+            float: left;
+            margin-right:40px ;
+            background-image: url(../web大作业图片素材/ggpoolblue.png);
+      }
+      /* 博物馆活动标题部分 */
+      .active-top h1{
+            line-height: 20px;
+            display: inline-block;
+            font-size: 20px;
+            margin-top:10px;
+            margin-left: 10px;
+      } 
+
+      .active-top h1 span {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            vertical-align: middle;
+            margin:5px;
+            margin-left: 5px;
+            font-size: 24px;
+            font-family: 微软雅黑,'Heiti SC',黑体,Arial;
+            color: white;
+      }
+      .active-top h1 a{
+            width: 210px;
+            height: 35px;
+      }
+      .active-top h1 img{
+            width: 20px;
+            height: 30px;
+      }
+      .active-top .more{
+            font-family: fzfysjt;
+            color: #fff;
+            position: relative;
+            line-height: 1;
+            width: 1.5em;
+            padding: 15px 25px;
+            float: right;
+            display: block;
+      
+      }
+      .active-top .more i{
+            font-style: normal;
+            font-weight: normal;
+            background: url(../web大作业图片素材/双鱼.png) no-repeat;
+            position: absolute;
+            left: 8px;
+            top: 7px;
+            width: 50px;
+            height: 50px;
+            display: block;
+      
+      }
+      .more i:hover{
+      -webkit-transition: all 0.5s linear; 
+      transition: all 0.5s linear; 
+      -webkit-transform: rotate(-180deg); 
+      transform: rotate(-180deg); 
+      }
+      .active-top {
+            color: #fff; 
+            border-bottom: 1px solid rgba(255,255,255,0.15); 
+            margin-top: 20px; 
+            padding-bottom: 20px; 
+      }
+
+      /* 博物馆活动文字部分 */
+      .active-bottom{
+            width: 450px;
+            line-height: 22px;
+            font-size: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #fff;
+            padding-left: 0px;
+            margin-right: 0;
+            padding-right: 25px;
+            position: relative;
+            display: inline-block;
+            padding-top: 0;
+            box-sizing: border-box;
+            float: left;
+      }
+      .active-bottom li{
+            display: block;
+            width: 360px;
+            margin-top: 10px;
+      }
+      .active-bottom a{
+            width: 200px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 10px;
+            /* 溢出文字用省略号 */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #fff;
+            padding-left:5px;
+            margin-right: 0;
+            padding-right: 5px;
+            max-width: 82%;
+            position: relative;
+            /* display: inline-block; */
+            padding-top: 0;
+            box-sizing: border-box;
+            /* float: left; */
+      }
+      .active-bottom a:hover{
+            color: coral;
+            font-size: larger;
+      }
+      .active-bottom p{
+            display:inline-block;
+            width: 80px; 
+            height: 35px;
+            line-height: 30px;
+            float: right; 
+            font-family: Arial; 
+            font-size:12px; 
+           padding-top: -5px;
+            /* margin-left: -10px; */
+         
+      }
+      .artical .research{
+            width: 370px;
+            height: 400px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/ggred.jpg);
+            }
+            /* 学术研究标题部分 */
+      .research-top h1{
+            line-height: 20px;
+            display: inline-block;
+            font-size: 20px;
+            margin-top:10px;
+            margin-left: 10px;
+      } 
+
+      .research-top h1 span {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            vertical-align: middle;
+            margin:5px;
+            margin-left: 5px;
+            font-size: 24px;
+            font-family: 微软雅黑,'Heiti SC',黑体,Arial;
+            color: white;
+      }
+      .research-top h1 a{
+            width: 210px;
+            height: 35px;
+      }
+      .research-top h1 img{
+            width: 20px;
+            height: 30px;
+      }
+      .research-top .more{
+            font-family: fzfysjt;
+            color: #fff;
+            position: relative;
+            line-height: 1;
+            width: 1.5em;
+            padding: 15px 25px;
+            float: right;
+            display: block;
+      
+      }
+      .research-top .more i{
+            font-style: normal;
+            font-weight: normal;
+            background: url(../web大作业图片素材/双鱼.png) no-repeat;
+            position: absolute;
+            left: 8px;
+            top: 7px;
+            width: 50px;
+            height: 50px;
+            display: block;
+      
+      }
+      .more i:hover{
+      -webkit-transition: all 0.5s linear; 
+      transition: all 0.5s linear; 
+      -webkit-transform: rotate(-180deg); 
+      transform: rotate(-180deg); 
+      }
+      .research-top {
+            color: #fff; 
+            border-bottom: 1px solid rgba(255,255,255,0.15); 
+            margin-top: 20px; 
+            padding-bottom: 20px; 
+      }
+
+      /*学术研究文字部分 */
+      .research-bottom{
+            width: 450px;
+            line-height: 22px;
+            font-size: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #fff;
+            padding-left: 0px;
+            margin-right: 0;
+            padding-right: 25px;
+            position: relative;
+            display: inline-block;
+            padding-top: 0;
+            box-sizing: border-box;
+            float: left;
+      }
+      .research-bottom li{
+            display: block;
+            width: 360px;
+            margin-top: 10px;
+      }
+      .research-bottom a{
+            width: 200px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 10px;
+            /* 溢出文字用省略号 */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #fff;
+            padding-left:5px;
+            margin-right: 0;
+            padding-right: 5px;
+            max-width: 82%;
+            position: relative;
+            /* display: inline-block; */
+            padding-top: 0;
+            box-sizing: border-box;
+            /* float: left; */
+      }
+      .research-bottom a:hover{
+            color: coral;
+            font-size: larger;
+      }
+      .research-bottom p{
+            display:inline-block;
+            width: 80px; 
+            height: 35px;
+            line-height: 30px;
+            float: right; 
+            font-family: Arial; 
+            font-size:12px; 
+           padding-top: -5px;
+            /* margin-left: -10px; */
+         
+      }
+
+      .research .magazine{
+            width: 344px;
+            height: 400px;
+            display: block;
+            float: left;
+            background-color: rgb(153, 94, 26);
+      }
+      /* 背景图盒子 */
+      .yuankan{
+            z-index: -1;
+            width: 344px;
+            height: 200px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/杂志1.jpg);
+      }
+      .zijingcheng{
+            width: 344px;
+            height: 200px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/杂志2.jpg);
+      }
+      /* 杂志图标 */
+      .yuankan-logo,
+      .zijingcheng-logo{
+            position:absolute;
+            margin-top: 40px;
+            margin-left: 20px;
+            display: block;
+            background-color: turquoise;
+            width: 100px;
+            height:120px;
+      }
+      .zijingcheng-logo{
+            margin-top: 7px;
+            width: 70px;
+            height: 185px;
+      }
+      .magazine .yuankan-logo img{
+            width: 100px;
+            height:120px;
+      }
+      .magazine .zijingcheng-logo img{
+            width: 70px;
+            height: 185px;
+      }
+      .magazine .shadow{
+            z-index: 10;
+            display: block;
+            float: right;
+            margin-right: 0px;
+            height: 200px;
+            width: 200px;
+            background: rgba(0,0,0,0.5);
+            
+      }
+      .magazine li,
+      .magazine li a{
+            display: block;
+            width:200px;
+            height: 45px;
+            font-size: 14px;
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            white-space:nowrap;
+            line-height: 45px;
+      }
+      .magazine li:hover,
+      .magazine li a:hover{
+            color: rgb(228, 200, 42);
+            font-size: 16px;
+      }
+      .hall{
+            
+            width: 1125px;
+            height: 200px;
+            margin-top: 30px;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: turquoise;
+      }
+      .hall-one{
+            width: 225px;
+            height: 200px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/图书馆背景图.jpg);
+      }
+      .hall-two{
+            width: 225px;
+            height: 200px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/视听馆背景图.jpg);
+      }
+      .hall-three{
+            width: 225px;
+            height: 200px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/数字文物库背景图.jpg);
+      }
+      .hall-four{
+            width: 225px;
+            height: 200px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/全景故宫背景图.jpg);
+      }
+      .hall-five{
+            width:225px;
+            height: 200px;
+            display: block;
+            float: left;
+            background-image: url(../web大作业图片素材/VR故宫背景图.jpg);
+      }
+      .hall-one:hover,
+      .hall-two:hover,
+      .hall-three:hover,
+      .hall-four:hover,
+      .hall-five:hover{background-image: url(../web大作业图片素材/ggblue.png);}
+      
+      .hall .logo,
+      .hall .logo img{
+            display: block;
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+            margin-top:40px;
+            margin-left:30px ;
+      }
+      .hall p{
+            display: block;
+            font-size: 16px;
+            width:225px;
+            height: 1em;
+            padding-left: 5em;  
+            font-weight:bolder;
+            color: white;
+      }
+      .bottom{
+            width: 1204px;
+            height: 300px;
+            background-color: #272727;
+            margin-top: 30px;
+      }
+      .bottom .a{
+            height: 100px;
+            background-color: #272727;
+      }
+      /* 让图标那一行居中 */
+      .a-div{
+            padding-left: 302px;
+      }
+      .a .bottom-div{
+            display: block;
+            width: 100px;
+            height: 120px;
+            margin:2px 10px;
+            float: left;
+            
+      }
+      .bottom-nav,.bottom-nav img{
+            display: block;
+            width: 100px;
+            height: 100px;
+            /* margin:0 10px; */
+            background-color: #474747;
+            float: left;
+            border-radius: 50px;
+      }
+      .bottom-nav img:hover{
+            transform: scale(1.02);
+      }
+      .a-div span{
+            display: block;
+            color: #b4b3b8;
+            font-size: 16px;
+            text-align: center;
+      }
+      .nav-foot{
+           display: block;
+           width: 100%;
+           height: 30px;
+           float: left;
+           text-align: center;
+      }
+      .nav-foot .a-nav{
+            margin-left: 250px;
+      }
+      .nav-foot a{
+            display: inline-block;
+            width: 80px;
+            margin:5px;
+            font-weight: bold;
+            float: left;
+      }
+      .copyright{
+            margin-top: 100px;
+            text-align: center;
+            font-size: 30px;
+      }
